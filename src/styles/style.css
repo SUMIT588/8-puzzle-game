@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.container {
+  min-height: 100vh;
+  position: relative;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+
+.title {
+  font-family: "Rubik Iso", cursive;
+  font-size: 55px;
+  margin: 0;
+}
+
+.button {
+  width: 100px;
+  height: 40px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 15px;
+  background-color: #008000;
+  color: #eceaea;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border: none;
+  /*font-family: "Cabin", sans-serif;
+  */transition: transform 0.3s ease;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.button:hover {
+  transform: scale(1.1);
+}
+
+.board-container {
+  width: 95px;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  padding: 1px 1px 2px 2px;
+}
+
+.level-container {
+  display: flex;
+  justify-content: center;
+}
+
+.states-container {
+  display: flex;
+  align-items: center;
+  min-height: 55vh;
+}
+
+.state-container {
+  margin: 30px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.board-row {
+  display: flex;
+}
+
+.board-element {
+  width: 30px;
+  height: 30px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 25px;
+  
+}
+
+.label {
+  margin: 0;
+  margin-top: 10px;
+}
+
+.toggle-switch {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 40px;
+  top: 10px;
+}
+
+.aStarFunctionContainer {
+  margin-bottom: 10px;
+}
+
+.aStarFunction {
+  margin: 0;
+}
+
+.aStarDefinition {
+  position: fixed;
+  right: 0%;
+  bottom: 0%;
+  padding: 0px 9px;
+  background-color: #edbaf2;
+  border: 3px solid #000;
+  border-top-left-radius: 5px;
+}
+
+.aStarP {
+  font-weight: 600;
+}
+
+.finalState {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  right: 3%;
+  top: 15%;
+}
