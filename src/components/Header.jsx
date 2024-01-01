@@ -47,11 +47,7 @@ const Header = ({ generatePossibleState, reset, showGenerateButton }) => {
           >
             <FormControlLabel value="bfs" control={<Radio />} label="BFS" />
             <FormControlLabel value="dfs" control={<Radio />} label="DFS" />
-            <FormControlLabel
-              value="aStar"
-              control={<Radio />}
-              label="A-Star"
-            />
+          
           </RadioGroup>
         </FormControl>
       </div>
