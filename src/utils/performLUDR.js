@@ -1,4 +1,5 @@
 import { finalNumbers, initialState } from "../data/data";
+
 import checkArrayEqual from "./checkArrayEqual";
 import checkRecursiveOrNot from "./checkRecursiveOrNot";
 import checkValidMove from "./checkVaildMove";

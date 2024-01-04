@@ -30,8 +30,7 @@ code {
 }
 
 .title {
-  font-family: "Rubik Iso", cursive;
-  font-size: 55px;
+  font-size: 45px;
   margin: 0;
 }
 
@@ -100,6 +99,7 @@ code {
   
 }
 
+
 .label {
   margin: 0;
   margin-top: 10px;
@@ -143,3 +143,4 @@ code {
   right: 3%;
   top: 15%;
 }
+

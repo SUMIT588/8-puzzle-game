@@ -29,7 +29,7 @@ const DFS = () => {
         showGenerateButton={showGenerateButton}
       />
 
-      <ArcherContainer strokeColor="blue" startMarker={true} endMarker={false}>
+      <ArcherContainer strokeColor="blue" startMarker={true} endMarker={false} svgContainerStyle={{width: '1000%'}} >
         <div className="states-container">
           {stateArray.map((states, i) => (
             <div key={i}>

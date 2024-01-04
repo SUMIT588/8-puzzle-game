@@ -1,10 +1,11 @@
-import { useState } from "react";
+import { ArcherContainer, ArcherElement } from "react-archer";
+
 import Board from "../components/Board";
 import Header from "../components/Header";
 import checkArrayEqual from "../utils/checkArrayEqual";
-import { initialState } from "../data/data";
-import { ArcherContainer, ArcherElement } from "react-archer";
 import checkValidMove from "../utils/checkVaildMove";
+import { initialState } from "../data/data";
+import { useState } from "react";
 
 const BFS = () => {
   const [stateArray, setStateArray] = useState([[initialState]]);
@@ -169,7 +170,7 @@ const BFS = () => {
         <h3>{`Level: ${level}`}</h3>
       </div>
 
-      <ArcherContainer strokeColor="black" startMarker={true} endMarker={false}>
+      <ArcherContainer strokeColor="black" startMarker={true} endMarker={false} svgContainerStyle={{width: '500%'}}>
         <div className="states-container">
           {stateArray.map((states, i) => (
             <div key={i}>

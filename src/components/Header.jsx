@@ -18,9 +18,20 @@ const Header = ({ generatePossibleState, reset, showGenerateButton }) => {
   return (
     <div className="content">
       <div className="title-wrapper">
-        <h2 className="title">{`(${
-          algorithm === "bfs" ? `BFS` : algorithm === "dfs" ? `DFS` : `A-Star`
-        })`}</h2>
+        <h2 className="title">{`${
+          algorithm === "bfs"
+            ? `Breath First Search`
+            : algorithm === "dfs"
+            ? `Depth First Search`
+            : ``
+        }`}</h2>
+        <h3>{`${
+          algorithm === "bfs"
+            ? `Explores all nodes at the present depth prior to moving on to the nodes at the next depth level`
+            : algorithm === "dfs"
+            ? `Explores as far as possible along each branch before backtracking`
+            : `A-Star`
+        }`}</h3>
       </div>
       <div>
         {showGenerateButton && (
@@ -47,7 +58,6 @@ const Header = ({ generatePossibleState, reset, showGenerateButton }) => {
           >
             <FormControlLabel value="bfs" control={<Radio />} label="BFS" />
             <FormControlLabel value="dfs" control={<Radio />} label="DFS" />
-          
           </RadioGroup>
         </FormControl>
       </div>
